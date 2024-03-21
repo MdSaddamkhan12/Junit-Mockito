@@ -19,3 +19,13 @@ q
 Asrc/test/java/com/saddam/mockito/test_double/dummy/DummyTest.java,b\0\b0588b090dd344035a75af549720e7129cabce7a
 y
 Isrc/test/java/com/saddam/mockito/test_double/dummy/DummyEmailService.java,a\9\a9f42a3110ff4e776e4786dc8de82fde0ff0df8e
+u
+Esrc/main/java/com/saddam/mockito/test_double/stub/BookRepository.java,b\8\b82d936f01ecbc271a2ed82b679c0e55444b785d
+r
+Bsrc/main/java/com/saddam/mockito/test_double/stub/BookService.java,7\f\7f8d470ce6dfc7f190bde35d079d63621d0b477c
+k
+;src/main/java/com/saddam/mockito/test_double/stub/Book.java,6\f\6fd4cfeea6d503dee87a5062bc918dc7435e124c
+o
+?src/test/java/com/saddam/mockito/test_double/stub/StubTest.java,4\b\4b250310437ac21ab5a8fe28577c7c34008e22c4
+y
+Isrc/test/java/com/saddam/mockito/test_double/stub/BookRepositoryStub.java,8\0\802a947c1fd79b77eea619b38da4d0063fb12cb4
