@@ -29,3 +29,11 @@ o
 ?src/test/java/com/saddam/mockito/test_double/stub/StubTest.java,4\b\4b250310437ac21ab5a8fe28577c7c34008e22c4
 y
 Isrc/test/java/com/saddam/mockito/test_double/stub/BookRepositoryStub.java,8\0\802a947c1fd79b77eea619b38da4d0063fb12cb4
+o
+?src/test/java/com/saddam/mockito/test_double/mock/MockTest.java,a\d\adcca6f016145a4bbda89136e4171610a9ac67e3
+y
+Isrc/test/java/com/saddam/mockito/test_double/mock/BookRepositoryMock.java,9\2\92fa51aba3fd00928a14c4134ccb604c4bd41246
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+u
+Esrc/main/java/com/saddam/mockito/test_double/mock/BookRepository.java,0\f\0f28e6916c64c87163a461cfad32d73f71441860
