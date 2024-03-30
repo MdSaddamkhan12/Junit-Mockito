@@ -1,8 +1,4 @@
 package com.saddam.mockito.test_double.mock;
-
-import com.saddam.mockito.test_double.spy.Book;
-import com.saddam.mockito.test_double.spy.BookRepository;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BookRepositoryMock implements BookRepository {

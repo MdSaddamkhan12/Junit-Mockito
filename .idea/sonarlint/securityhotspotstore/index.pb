@@ -37,3 +37,13 @@ Isrc/test/java/com/saddam/mockito/test_double/mock/BookRepositoryMock.java,9\2\
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 u
 Esrc/main/java/com/saddam/mockito/test_double/mock/BookRepository.java,0\f\0f28e6916c64c87163a461cfad32d73f71441860
+q
+Asrc/main/java/com/saddam/mockito/test_double/spy/BookService.java,6\0\60adc2ffac8ea778ac3c2d932292518c1bb62314
+w
+Gsrc/test/java/com/saddam/mockito/test_double/spy/BookRepositorySpy.java,8\2\822b60a5bfd873cfb617b42e2fb3e14eec31d3a0
+t
+Dsrc/main/java/com/saddam/mockito/test_double/spy/BookRepository.java,4\4\4461bba32b92f9a347d0b3788178031003873b4c
+r
+Bsrc/main/java/com/saddam/mockito/test_double/mock/BookService.java,b\d\bd9a952ead7b7878a425ac1e42599fc27e6d0a69
+m
+=src/test/java/com/saddam/mockito/test_double/spy/SpyTest.java,6\e\6e0916a6f76a263687269dca6d27719c615ffeb5
