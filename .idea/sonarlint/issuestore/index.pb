@@ -63,3 +63,5 @@ v
 Fsrc/main/java/com/saddam/mockito/test_double/stubbing/BookService.java,4\d\4d585f2c086a42a44abac01f9505b34ee4e74678
 z
 Jsrc/test/java/com/saddam/mockito/test_double/stubbing/BookServiceTest.java,1\a\1ab2577cdc19d5993d3d5edf2b9c0a5867d23e93
+v
+Fsrc/main/java/com/saddam/mockito/test_double/stubbing/BookRequest.java,e\9\e967be3bf136e55f00d034141004991eef1021f6

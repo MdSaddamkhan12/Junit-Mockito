@@ -35,5 +35,17 @@ public class BookService {
         return total;
     }
 
+    public void addBook(Book book){
+        bookRepository.save(book);
+    }
+    public void addBook(BookRequest bookRequest){
+
+        Book book = new Book();
+        book.setTitle(bookRequest.getTitle());
+        book.setPrice(bookRequest.getPrice());
+        book.setPublishedDate(bookRequest.getPublishedDate());
+        bookRepository.save(book);
+    }
+
 
 }
