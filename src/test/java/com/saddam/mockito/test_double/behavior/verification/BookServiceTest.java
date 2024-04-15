@@ -1,5 +1,6 @@
 package com.saddam.mockito.test_double.behavior.verification;
 
+import com.saddam.mockito.test_double.stubbing.BookRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -8,6 +9,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDate;
 
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 @ExtendWith(MockitoExtension.class)
@@ -24,6 +26,24 @@ public class BookServiceTest {
         Book book = new Book(null, "Mockito In Action", 500, LocalDate.now());
         bookService.addBook(book);
         verify(bookRepository).save(book);
+    }
+
+    @Test
+    public void testSaveBookWithBookRequestWithGreaterPrice(){
+
+        BookRequest bookRequest = new BookRequest("Mockito In Action", 500, LocalDate.now());
+        Book book = new Book(null, "Mockito In Action", 500, LocalDate.now());
+        bookService.addBook(bookRequest);
+        verify(bookRepository, times(0)).save(book);
+    }
+    @Test
+    public void testSaveBookWithBookRequestWithGreaterPrice1(){
+
+        BookRequest bookRequest = new BookRequest("Mockito In Action", 600, LocalDate.now());
+        Book book = new Book(null, "Mockito In Action", 600, LocalDate.now());
+        bookService.addBook(bookRequest);
+        bookService.addBook(bookRequest);
+        verify(bookRepository, times(2)).save(book);
     }
 
 }
