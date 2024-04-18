@@ -5,12 +5,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.internal.verification.NoInteractions;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.time.LocalDate;
 
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class BookServiceTest {
@@ -44,6 +44,21 @@ public class BookServiceTest {
         bookService.addBook(bookRequest);
         bookService.addBook(bookRequest);
         verify(bookRepository, times(2)).save(book);
+    }
+    @Test
+    public void testSaveBookWithBookRequestWithGreaterPrice2(){
+
+        BookRequest bookRequest = new BookRequest("Mockito In Action", 500, LocalDate.now());
+        Book book = new Book(null, "Mockito In Action", 500, LocalDate.now());
+        bookService.addBook(bookRequest);
+        verify(bookRepository, never()).save(book); // repository.save() method never called
+    }
+
+    @Test
+    public void testUpdateBook(){
+
+        bookService.updatePrice(null, 600);
+        verifyNoInteractions(bookRepository);
     }
 
 }
