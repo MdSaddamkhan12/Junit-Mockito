@@ -60,5 +60,15 @@ public class BookServiceTest {
         bookService.updatePrice(null, 600);
         verifyNoInteractions(bookRepository);
     }
+    @Test
+    public void testUpdateBook2(){
+
+        Book book = new Book("1234", "Mockito In Action", 500, LocalDate.now());
+        when(bookRepository.findBookById("1234")).thenReturn(book);
+        bookService.updatePrice("1234", 500);
+        verify(bookRepository).findBookById("1234");
+        verify(bookRepository).save(book);
+        verifyNoMoreInteractions(bookRepository);
+    }
 
 }
