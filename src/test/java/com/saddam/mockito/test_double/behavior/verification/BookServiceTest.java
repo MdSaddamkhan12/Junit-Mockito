@@ -3,8 +3,10 @@ package com.saddam.mockito.test_double.behavior.verification;
 import com.saddam.mockito.test_double.stubbing.BookRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InOrder;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.internal.verification.NoInteractions;
 import org.mockito.junit.jupiter.MockitoExtension;
 
@@ -69,6 +71,17 @@ public class BookServiceTest {
         verify(bookRepository).findBookById("1234");
         verify(bookRepository).save(book);
         verifyNoMoreInteractions(bookRepository);
+    }
+    @Test
+    public void testUpdateBook3(){
+
+        Book book = new Book("1234", "Mockito In Action", 500, LocalDate.now());
+        when(bookRepository.findBookById("1234")).thenReturn(book);
+        bookService.updatePrice("1234", 500);
+
+        InOrder inOrder = Mockito.inOrder(bookRepository);
+        inOrder.verify(bookRepository).findBookById("1234");
+        inOrder.verify(bookRepository).save(book);
     }
 
 }
