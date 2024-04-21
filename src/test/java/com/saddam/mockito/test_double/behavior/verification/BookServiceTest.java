@@ -55,6 +55,20 @@ public class BookServiceTest {
         bookService.addBook(bookRequest);
         verify(bookRepository, never()).save(book); // repository.save() method never called
     }
+    @Test
+    public void testSaveBookWithBookRequestWithGreaterPrice3(){
+
+        BookRequest bookRequest = new BookRequest("Mockito In Action", 600, LocalDate.now());
+        Book book = new Book(null, "Mockito In Action", 600, LocalDate.now());
+        bookService.addBook(bookRequest);
+        bookService.addBook(bookRequest);
+        bookService.addBook(bookRequest);
+//        verify(bookRepository, times(2)).save(book);
+//        verify(bookRepository, atLeast(4)).save(book);
+//        verify(bookRepository, atMost(2)).save(book);
+//        verify(bookRepository, atMostOnce()).save(book);
+        verify(bookRepository, atLeastOnce()).save(book);
+    }
 
     @Test
     public void testUpdateBook(){
