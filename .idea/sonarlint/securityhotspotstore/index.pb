@@ -81,3 +81,7 @@ Ssrc/main/java/com/saddam/mockito/test_double/exception_handling/BookRepository.
 Zsrc/main/java/com/saddam/mockito/test_double/exception_handling/DatabaseReadException.java,1\3\139d1e144847d9c5ac82bbc42ec72606298ee6d2
 „
 Tsrc/test/java/com/saddam/mockito/test_double/exception_handling/BookServiceTest.java,b\e\beb69b14cc502e5c4bd56be4579ded8fedec31d7
+‹
+[src/main/java/com/saddam/mockito/test_double/exception_handling/DatabaseWriteException.java,1\3\131e3ae57961ed731b3ad37e35ccfbe020b008e1
+|
+Lsrc/main/java/com/saddam/mockito/test_double/behavior/verification/Book.java,8\b\8b652de78a55b04aef7529682b81a9d70c1c05c3
