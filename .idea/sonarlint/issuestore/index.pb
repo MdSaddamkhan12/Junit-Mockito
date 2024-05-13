@@ -89,3 +89,15 @@ Lsrc/main/java/com/saddam/mockito/test_double/behavior/verification/Book.java,8
 Qsrc/test/java/com/saddam/mockito/test_double/argument_captor/BookServiceTest.java,6\e\6e4ee1efe830eacba89e17f1c0e1313f9db7d04e
 }
 Msrc/main/java/com/saddam/mockito/test_double/argument_captor/BookService.java,f\6\f6fc6f00e39d2f126de1ecd8b7f2809c4a6703db
+s
+Csrc/main/java/com/saddam/mockito/test_double/spies/BookManager.java,4\9\4913a2bc488b3fdbb4c86ee91e63f9a7e1d5a755
+s
+Csrc/main/java/com/saddam/mockito/test_double/spies/BookService.java,1\a\1a97b93bb43aa0a94292826f7f657c576423d3ed
+w
+Gsrc/test/java/com/saddam/mockito/test_double/spies/BookManagerTest.java,3\0\301a16067d42ab541b4f9e30c6791e62a9a17152
+w
+Gsrc/test/java/com/saddam/mockito/test_double/bdd/stubbing/StubTest.java,7\3\73d3d94ce23b8a7f01e939cff9ed3192a33b5c4f
+‡
+Wsrc/main/java/com/saddam/mockito/test_double/bdd/vehavior_verification/BookService.java,b\b\bbcab40cf4e1778e9ccb6d0e44d1e7a4a3ad3d23
+‹
+[src/test/java/com/saddam/mockito/test_double/bdd/behavior_verification/BookServiceTest.java,5\3\53c5caadb5fa6dfe6c064db76e2d89b31dd16975
