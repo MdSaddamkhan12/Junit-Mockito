@@ -61,5 +61,16 @@ public class BookServiceTest {
         //Argument matchers should be provided for all arguments
         //Arguments matchers can't be used outside the stubbing/verification
     }
+    @Test
+    public void testStringTypeOfArgumentMatchers(){
+        Book book = new Book("1234", "Mockito In Action", 600, LocalDate.now());
+        when(bookRepository.findBookByTitleAndPriceAndIsDigital(startsWith("Mockito"),anyInt(), anyBoolean())).thenReturn(book);
+        Book actualBook = bookService.getBookByTitleAndPriceAndIsDigital("Mockito In Action", 600,true);
+        assertEquals("Mockito In Action", actualBook.getTitle());
+
+        //startsWith, endsWith,contains, matches
+
+
+    }
 
 }
