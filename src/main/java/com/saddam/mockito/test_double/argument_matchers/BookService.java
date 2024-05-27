@@ -3,6 +3,7 @@ package com.saddam.mockito.test_double.argument_matchers;
 import com.saddam.mockito.test_double.stubbing.BookRequest;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class BookService {
 
@@ -17,6 +18,10 @@ public class BookService {
             return;
         }
         bookRepository.save(book);
+    }
+    public void addBooks(List<Book> books){
+
+        bookRepository.saveAll(books);
     }
 
     public void addBook(BookRequest bookRequest){
@@ -47,6 +52,9 @@ public class BookService {
 
     public Book getBookByTitleAndPublishDate(String title, LocalDate localDate){
         return bookRepository.findBookByTitleAndPublishDate(title, localDate);
+    }
+    public Book getBookByTitleAndPriceAndIsDigital(String title, int price , boolean isDigital){
+        return bookRepository.findBookByTitleAndPriceAndIsDigital(title, price, isDigital);
     }
 
 }

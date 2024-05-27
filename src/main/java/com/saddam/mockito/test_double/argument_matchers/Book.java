@@ -9,6 +9,7 @@ public class Book {
     private String title;
     private int price;
     private LocalDate publishedDate;
+    private boolean isDigital;
 
     public Book() {
     }
@@ -18,6 +19,14 @@ public class Book {
         this.title = title;
         this.price = price;
         this.publishedDate = publishedDate;
+    }
+
+    public Book(String bookId, String title, int price, LocalDate publishedDate, boolean isDigital) {
+        this.bookId = bookId;
+        this.title = title;
+        this.price = price;
+        this.publishedDate = publishedDate;
+        this.isDigital = isDigital;
     }
 
     public String getBookId() {
@@ -50,6 +59,14 @@ public class Book {
 
     public void setPublishedDate(LocalDate publishedDate) {
         this.publishedDate = publishedDate;
+    }
+
+    public boolean isDigital() {
+        return isDigital;
+    }
+
+    public void setDigital(boolean digital) {
+        isDigital = digital;
     }
 
     @Override
